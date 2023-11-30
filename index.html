@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SegundaPreentrega</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="./app.js">
+</head>
+
+
+
+
+<body>
+    
+    <main>
+        <section class="productos" id="productos">
+            <div class="producto" id="producto1">
+                <div class="item">
+                    <h2>Intake</h2>
+                    <img src="https://res.cloudinary.com/knfilters-com/image/upload/c_lpad,dpr_2.0,f_auto,h_540,q_auto,w_540/v1/media/catalog/product/6/9/69-4530TS-REV-A_2.jpg?_i=AB" alt="Producto 1">
+                </div>
+                    
+                <div class="info">
+                    <p>Precio: $ <span id="precio1">60</span></p>
+                    <p>Filtro de alto flujo</p>
+                    <p>Stock: <span id="stock1">5</span></p>
+                    <button onclick="agregarAlCarrito(1)">Agregar al carrito</button>
+                </div>
+                
+            </div>
+            <hr>
+            <div class="producto" id="producto2">
+                <div class="item">
+                    <h2>Headers</h2>
+                    <img src="https://acnews.blob.core.windows.net/imgnews/large/NAZ_59ec369dd27842e981b1a32d66adf9bb.jpg" alt="Producto 2">
+                </div>
+                
+                <div class="info">
+                    <p>Precio: $ <span id="precio2">115</span></p>
+                    <p>Salida de aire</p>
+                    <p>Stock: <span id="stock2">8</span></p>
+                    <button onclick="agregarAlCarrito(2)">Agregar al carrito</button>
+                </div>
+                
+            </div>
+            <hr>
+            <div class="producto" id="producto3">
+                <div class="item">
+                    <h2>ECU</h2>
+                    <img src="https://storage.googleapis.com/blog-files-gcs-prod/uploads/sites/11/2022/04/shutterstock_1709170579.jpg" alt="Producto 3">
+                </div>
+                
+                <div class="info">
+                    <p>Precio: $<span id="precio3">420</span></p>
+                    <p>Computadora con mapeo</p>
+                    <p>Stock: <span id="stock3">6</span></p>
+                    <button onclick="agregarAlCarrito(3)">Agregar al carrito</button>
+                </div>
+                
+            </div>
+            <hr>
+            <div class="producto" id="producto4">
+                <div class="item">
+                    <h2>Trubo</h2>
+                    <img src="https://autolab.mx/wp-content/uploads/2022/01/instalar-turbo-en-mi-auto.jpg" alt="Producto 4">
+                </div>
+                
+                <div class="info">
+                    <p>Precio: $ <span id="precio4">725</span></p>
+                    <p>Induccion forzada</p>
+                    <p>Stock: <span id="stock4">10</span></p>
+                <button onclick="agregarAlCarrito(4)">Agregar al carrito</button>
+                </div>
+
+            </div>
+            <hr>
+        </section>
+
+        <aside>
+            <div id="carrito">
+                <h2>Carrito de compras</h2>
+                <p>Total de unidades: <span id="totalUnidades">0</span></p>
+                <p>Total a pagar: $<span id="totalPrecio">0</span></p>
+                <button id="clear">Limpiar</button>
+                <button id="checkout-btn">Comprar</button>
+            </div>
+        </aside>
+    </main>
+
+
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
